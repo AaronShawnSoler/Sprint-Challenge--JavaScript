@@ -110,11 +110,9 @@ The zoos want to display both the scientific name and the animal name in front o
 */
 const animalNames = zooAnimals.slice();
 
-animalNames.forEach((element, index) => {
-  animalNames[index] = `Name: ${element.animal_name}, Scientific: ${element.scientific_name}.`;
-});
-
+animalNames.forEach((element, index) => (animalNames[index] = `Name: ${element.animal_name}, Scientific: ${element.scientific_name}.`));
 const displayNames = animalNames;
+
 console.log('ANIMAL NAMES');
 console.log(displayNames);
 
